@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="whole">
+    <header>
+        <div class="logo">IVAN SAGA</div>
+        <nav class="nav-links">
+            <a href="#" class="active">Home</a>
+                <a href="#about" class="deact">About Me</a>
+        </nav>
+    </header>
+
+    <section class="portfolio-section">
+        <div class="text">
+            <h1>Hi, It's <span>Ivan</span></h1>
+                <h3>A Video Editor and a<span></span></h3>
+                    <p>college freshman at Caraga State University, pursuing a Bachelor of Science in Information Systems. 
+                         Im a self-driven individual with a passion for video editing, freelancing, and technology. 
+                        Currently, Im building a foundation for freelancing while exploring business opportunities, all while continuously working on personal growth and development.
+                    </p>
+            <div class="social">
+                <a href="https://www.facebook.com/ivan.saga.161?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://m.me/ivan.saga.161?hash=AbZ6F9V2wFzNv23S&source=qr_link_share" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        <a href="ivansaga789@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://t.me/+639667623745" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </div>
+        <div class="portfolio-image">
+            <img src="IMGs/Me3.jpg" alt="Me3">
+        </div>
+    </section>
+
+    <footer>
+        Page | 01
+    </footer>
+    </div>
+</body>
+<div>
+    <header class="head">
+        <div class="logo">IVAN SAGA</div>
+        <nav class="nav-linkss">
+            <a class="hme" href="#">Home</a>
+                <a class="abt" href="#about">About Me</a>
+        </nav>
+    </header>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IMGs/Me4.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="aboutme">I am Ivan Saga, 19 years old, born on September 7th 2005. First-year Information Systems student at Caraga State University with a growing interest in technology and digital content creation. 
+                    I have experience in video editing and presentation design, and I am currently learning more about coding and programming. 
+                    My goal is to build a career in freelancing while exploring opportunities to combine creativity and technology in meaningful ways.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>-</span><br>Video Editing</li>
+                            <li><span>-</span><br>Photography</li> 
+                            <li><span>-</span><br>Presentation Design</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>-</span><br>Got Commissioned regularly in Highschool</li>
+                            <li><span>-</span><br>Edited videos in major events in our school</li> 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>-</span><br>High School: Esperanza National High School (ABM Strand)</li>
+                        <li><span>-</span><br>College: Bachelor of Science in Information System, Caraga State University</li> 
+                    </ul>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <footer>
+        Page | 02
+    </footer>      
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+
+
+</html>
